@@ -7,6 +7,7 @@ export default function HeroDetail(props) {
   const [detail, setDetail] = React.useState({});
   const [apistatus, setApiStatus] = React.useState({ isError: false });
   const { id } = useParams();
+
   React.useEffect(() => {
     axios
       .get(`https://akabab.github.io/superhero-api/api/id/${id}.json`)
@@ -20,6 +21,7 @@ export default function HeroDetail(props) {
         console.log("err", err);
       });
   }, []);
+  
   function displyDetails(object) {
     return Object.entries(object || {}).map((arryObj, index) => {
       return (
