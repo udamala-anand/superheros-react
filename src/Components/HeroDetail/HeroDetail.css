@@ -1,0 +1,22 @@
+.header_lable{
+    font-size: 32px;
+    font-weight: 900
+}
+.carddetail{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.carddetail__details{
+    display: flex;
+flex-direction: column;
+width: 100%;
+}
+.carddetail__detail__list{
+    display: flex;
+}
+.carddetail__detail__list >*{
+  border: 1px solid grey;
+  padding:5px;
+  margin:5px
+}

@@ -1,7 +1,17 @@
-import React from 'react'
-import Collection from "../../Components/Collection/Collection"
+import React from "react";
+import Collection from "../../Components/Collection/Collection";
+import { Routes, Route, Navigate } from "react-router-dom";
+import NotFound from "../../Components/NotFound/NotFound";
+import HeroDetail from "../../Components/HeroDetail/HeroDetail";
 export default function Layout() {
   return (
-    <><Collection/></>
-  )
+    <>
+      <Routes>
+        <Route path="/" element={<Navigate to="/collection" replace />} />
+        <Route path="/collection" element={<Collection />} />
+        <Route path="/collection/:id" element={<HeroDetail />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </>
+  );
 }
