@@ -1,8 +1,10 @@
 import React from "react";
-import Collection from "../../Components/Collection/Collection";
 import { Routes, Route, Navigate } from "react-router-dom";
+
+import Collection from "../../Components/Collection/Collection";
 import NotFound from "../../Components/NotFound/NotFound";
 import HeroDetail from "../../Components/HeroDetail/HeroDetail";
+
 export default function Layout() {
   return (
     <>

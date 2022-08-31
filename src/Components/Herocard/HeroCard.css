@@ -9,6 +9,11 @@
     width: 200px;
     height:180px;
 }
+.first-appearance-tooltip{
+    border-radius: 5px;
+    box-sizing: border-box;
+    position: relative;
+}
 @media screen and (min-width:900px) {
   
 .card{

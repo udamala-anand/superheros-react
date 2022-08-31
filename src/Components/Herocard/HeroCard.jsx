@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import "./HeroCard.css";
 export default function HeroCard({
   obj: {
@@ -18,7 +19,7 @@ export default function HeroCard({
             <span className="typography__lable">name:</span>
             {name}
           </div>
-          <div>
+          <div className="first-appearance-tooltip">
             <span className="typography__lable">firstAppearance:</span>
             {firstAppearance.substring(1, 30) + "..."}
           </div>
